@@ -1,10 +1,8 @@
 syntax = "proto3";
 
-package itemv1
+package itemv1;
 
 import "google/protobuf/timestamp.proto";
-
-option go_package = "github.com/yagi5/msmini-proto/client/item;item";
 
 service ItemService {
   rpc SearchByName(SearchByNameRequest) returns (SearchByNameResponse);
